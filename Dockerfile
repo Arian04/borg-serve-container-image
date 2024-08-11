@@ -1,8 +1,8 @@
 # syntax = docker/dockerfile:1
 
 # image args
-ARG IMAGE
-ARG IMAGE_TAG
+ARG IMAGE=debian
+ARG IMAGE_TAG=12
 
 ##### Build Image #####
 FROM ${IMAGE}:${IMAGE_TAG}

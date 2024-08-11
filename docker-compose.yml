@@ -3,9 +3,6 @@ services:
     image: ghcr.io/arian04/borg-serve-container-image:latest
     build:
       context: .
-      args:
-        IMAGE: debian
-        IMAGE_TAG: 12
     volumes:
       - ./authorized_keys:/config/ssh/authorized_keys:ro
       - ./repos/:/data/repos
