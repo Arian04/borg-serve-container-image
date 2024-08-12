@@ -1,6 +1,6 @@
 services:
   ssh-borg-serve:
-    image: ghcr.io/arian04/borg-serve-container-image:latest
+    image: ghcr.io/arian04/borg-serve:latest
     build:
       context: .
     volumes:
