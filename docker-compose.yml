@@ -2,7 +2,7 @@ services:
   ssh-borg-serve:
     image: ghcr.io/arian04/borg-serve:latest
     build:
-      context: .
+      context: ./src
     volumes:
       - ./authorized_keys:/config/ssh/authorized_keys:ro
       - ./repos/:/data/repos
